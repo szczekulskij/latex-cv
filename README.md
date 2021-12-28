@@ -1,4 +1,2 @@
-## Dependencies
-
-1. Compiles only with **XeTeX** 
-2. To compile run `xelatex CV.tex`
+* Compiles only with **XeTeX**  so to compile run `xelatex CV.tex`
+* Keep a seperate pdf-tex pairing for each of the CV versions
