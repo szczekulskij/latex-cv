@@ -1,5 +1,5 @@
 % Intro Options
-\ProvidesClass{plushcv}[2021/11/30 CV class]
+\ProvidesClass{CV}[2021/11/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
