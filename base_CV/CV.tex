@@ -1,40 +1,4 @@
 % !TEX program = xelatex
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% PlushCV - One Page Two Column Resume
-% LaTeX Template
-% Version 1.0 (11/28/2021)
-%
-% Author:
-% Shubham Mazumder (http://mazumder.me)
-%
-% Hacked together from:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% TODO:
-% 1. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add more icon options 
-% 4. Fix hacky left alignment on contact line
-% 5. Remove Hacky fix for awkward extra vertical space
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the vertical limit.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%Icons:
-%%Main: https://icons8.com/icons/carbon-copy
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \documentclass[]{CV}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -47,9 +11,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.home.me}{homepage.com}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/}{li-username}}{\href{mailto:first.last@mail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
-
-% \namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.mazumder.me}{mazumder.me}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/mazumders}{mazumders}}{\href{mailto:shubham.mazumder@gmail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
+\namesection{Szczekulski}{Jan}{Data Scientist}{\contactline{\href{http://jan-cs.com/}{jan-cs.com}}{\href{https://www.github.com/szczekulskij}{szczekulskij}}{\href{https://www.linkedin.com/in/jan-szczekulski-272ab615a/}{Jan}}{\href{mailto:szczekulskij@gmail.com}{szczekulskij@gmail.com}}{\href{tel:+48604982233}{+48604982233}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -65,36 +27,60 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{Weyland Yutani Industries}
-\descript{| Program Manager}
-\location{May 2021 – Current | Tokyo, Japan}
+\runsubsection{The Hut Group}
+\descript{| Graduate Data Scientist Logistics}
+\location{June 2021 – Current | Manchester, UK}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \sectionsep
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit. Vestibulum vel odio in diam ultrices posuere. Cras suscipit faucibus ullamcorper.
-\item Ut consectetur tempus tincidunt. Curabitur in felis et leo elementum facilisis at non metus. Vestibulum et ullamcorper augue, nec accumsan tellus. \item Cras posuere in nunc vel sagittis. Aliquam aliquet non orci id pellentesque. Nulla gravida lectus quis tellus rhoncus rhoncus.  
+
+% -> point 1
+\item Developed a company-wide demand forecast using scikit-learn,SQL \& Pandas.
+
+% -> point 2
+\item Set up multiple virtual machines used to run automated demand forecasts.
+
+% -> point 3
+\item Set up multiple automated pipelines via Jenkins \& Python.
+
+% -> point 4
+\item Guided new starters \& conducted/supported multiple interviews
+
+\end{tightemize}
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\runsubsection{The Hut Group}
+\descript{| Graduate Data Scientist Experimentation}
+\location{Sept 2020 – June 2021 | Manchester, UK}
+\begin{tightemize}
+
+% -> point 1
+\item Conducted multiple A/B/n experiments, saving company an \\estimated £1 milion/year.
+
+% -> point 2
+\item Used SQL, Python, Pandas and Matplotlib to analyse further multiple experiments. Drove valuable insights about tested features.
+
+% -> point 3
+\item Automated multiple systems using Jenkins and Python. Significantly decreased team's repetetive work.
+
+% -> point 4
+\item Implemented time-series model predicting app revenue using scikit-learn, numpy \& SQL.
+
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Tessier-Ashpoole S.A.}
-\descript{| Software Developer }
-\location{July 2016 – March 2019 | Villa Straylight, U.S.}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\runsubsection{University of Liverpool}
+\descript{| Summer Research Assistant }
+\location{June 2020 – Aug 2020 | Liverpool, UK}
 \begin{tightemize}
 \sectionsep
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit. Vestibulum vel odio in diam ultrices posuere. Cras suscipit faucibus ullamcorper.
-\item Ut consectetur tempus tincidunt. Curabitur in felis et leo elementum facilisis at non metus. Vestibulum et ullamcorper augue, nec accumsan tellus.
-\item Cras posuere in nunc vel sagittis. Aliquam aliquet non orci id pellentesque. Nulla gravida lectus quis tellus rhoncus rhoncus.
-\end{tightemize}
-\sectionsep
+% -> point 1
+\item Furthered my knowledge of machine learning \& neural networks used for vision tasks - especially U-nets.
 
-\runsubsection{LexCorp}
-\descript{| Software Developer }
-\location{July 2012 – March 2016 | Metropolis}
-\begin{tightemize}
-\sectionsep
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit. Vestibulum vel odio in diam ultrices posuere. Cras suscipit faucibus ullamcorper.
-\item Ut consectetur tempus tincidunt. Curabitur in felis et leo elementum facilisis at non metus. Vestibulum et ullamcorper augue, nec accumsan tellus.
- rhoncus.
+% -> point 2
+\item  Applied convolutional neural networks to geometric reconstruction in electron tomography, an idea based on the following {\href{https://core.ac.uk/download/pdf/204935374.pdf}{paper}}.
+
 \end{tightemize}
 \sectionsep
 
@@ -105,23 +91,59 @@
 
 \section{Projects}
 
-\runsubsection{Chess Engine}
-\descript{| C++}
-\location{2018}
+\runsubsection{Improving DDPG with SWA financial applications}
+\descript{| Python, Numpy,PyTorch}
+\location{2020}
 \begin{tightemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit. Vestibulum vel odio in diam ultrices posuere. Cras suscipit faucibus ullamcorper.
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit.
+
+% -> point 1
+\item Implemented reinforcement learning algorithm DDPG using PyTorch, based on the following {\href{https://arxiv.org/abs/1509.0297[]}{paper}}.
+
+% -> point 2
+\item Improved the stability of normally unstable DDPG using Stochastic Weighted Average from following research {\href{https://arxiv.org/abs/1803.05407}{paper}}.
+
+% -> point 3
+\item Further improved neural network's convergence by implementing one cycle policy algorithm from following research {\href{https://arxiv.org/abs/1506.01186}{paper}}.
+
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Speech-enabled Chatbot}
-\descript{| C\#, Microsoft Bot Framework}
-\location{2018}
+\runsubsection{ML models implementations from scratch }
+\descript{| Python, Numpy, scikit-learn}
+\location{2016-2021}
 \begin{tightemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit. Vestibulum vel odio in diam ultrices posuere. Cras suscipit faucibus ullamcorper. 
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit.
+
+
+% -> point 1
+\item  \textbf{Supervised}: Support Vector Machine \textbullet{} Linear Regression \textbullet{} KNN \textbullet{} Naive Bayes classifier
+
+% -> point 2
+\item  \textbf{Unsupervised}: K-means \textbullet{} principal component analysis
+
+% -> point 3
+\item Implemented perceptron as well as simple supervised neural network
+
+
 \end{tightemize}
 \sectionsep
+
+%\runsubsection{Project 3 - In Implementation}
+%\descript{|Languages (Python, Pytorch etc.)}
+%\location{year}
+%\begin{tightemize}
+%
+%% -> point 1
+%\item point1
+%
+%% -> point 2
+%\item point2
+%
+%% -> point 3
+%\item point3
+%
+%
+%\end{tightemize}
+%\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     AWARDS
@@ -153,23 +175,23 @@
 \subsection{Programming}
 \sectionsep
 \location{Proficient:}
-C\# \textbullet{} C \textbullet{} JavaScript \textbullet{} Python    \\ SQL \textbullet{} CSS \textbullet{} HTML \textbullet{} \\
+Python \textbullet{} SQL \textbullet{} Shell \\
 \sectionsep
 \location{Experienced:}
-Python \textbullet{} \LaTeX\ \textbullet{}  C++  \\
+Java \textbullet{} JavaScript \textbullet{}  HTML  \\
 \sectionsep
 \location{Familiar:}
-Java \textbullet{}  Shell \textbullet{} Assembly \\
+Prolog \textbullet{}  \LaTeX\ \textbullet{} C++  \\
 \sectionsep
 \sectionsep
 \subsection{Libraries/Frameworks}
 \sectionsep
-jQuery \textbullet{} Node.js \textbullet{} Jekyll \textbullet{} React \\
+Pandas \textbullet{} Numpy \textbullet{} Matplotlib \\ PyTorch \textbullet{} Scikit-Learn \textbullet{} React \\
 \sectionsep
 \sectionsep
 \subsection{Tools/Platforms}
 \sectionsep
-Git \textbullet{} Gulp \textbullet{} Webpack \textbullet{} Heroku    \\ Wordpress \textbullet{} Docker \\
+Git \textbullet{} Jenkins \textbullet{} Postman  \\ Linux(CentOS) \textbullet{} Kubernetes \\
 
 \sectionsep
 
@@ -181,71 +203,44 @@ Git \textbullet{} Gulp \textbullet{} Webpack \textbullet{} Heroku    \\ Wordpres
 \subsection{University of Liverpool}
 \descript{Bachelor's in Computer Science 
 \\and Mathematics}
-\location{2017 - 2020 | Liverpool, UK}
+\location{2016 - 2020 | Liverpool, UK}
 \location{First Class (Honours)}
 
 \sectionsep
 \subsection{Tadeusz Czacki's High School}
 \descript{Mathematics, English and Physics}
-\location{2014 - 2017 | Warsaw, Poland}
-School of Computing \\
-\location{BAA*}
+\location{2013 - 2016 | Warsaw, Poland}
+\location{A*AB accordingly}
 \sectionsep
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %     HOBBIES
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXTRA-CURRICULAR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{EXTRA-CURRICULAR} 
-\href{https://www.linkedin.com/company/john-doe/}{\textbf{John Doe}, Senior Software Developer, Tyrell Corp}
-\begingroup
-\setbox0=\hbox{
-\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} john.doe@email.com
-}
-\parbox{\wd0}{\box0}
-\endgroup
-\begingroup
-\setbox0=\hbox{
-\includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+19999999999
-}
-\parbox{\wd0}{\box0}\endgroup
-\\
+\subsection{Table Tennis Club}
+\descript{Team Captain}
+\descript{Social Welfare Officer}
+\location{2018 - 2019 | University of Liverpool, UK}
 \sectionsep
-\href{https://www.linkedin.com/company/john-doe/}{\textbf{Jane Doe}}, Senior Software Developer, Primatech 
-\\
-\begingroup
-\setbox0=\hbox{
-\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} jane.doe@email.com
-}
-\parbox{\wd0}{\box0}
-\endgroup
-\begingroup
-\setbox0=\hbox{
-\includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+19999999999
-}
-\parbox{\wd0}{\box0}\endgroup
-\\
+\sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Languages}
+\descript{Polish}
+\descript{English}
+\sectionsep
+\sectionsep
 
-% \section{Coursework}
+\subsection{Hobbies}
+\descript{Sports}
+\location{Basketball, Table Tennis \& Windsurfing}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\descript{Relaxation}
+\location{Cooking, Video Games \& Guitar}
 
-% \subsection{Graduate}
-% Graduate Algorithms \textbullet{}\\ 
-% Advanced Computer Architecture \textbullet{}\\ 
-% Operating Systems \textbullet{}\\ 
-% Artificial Intelligence \textbullet{}\\
-% Visualization For Scientific Data \\
-% \sectionsep   
 
-% \subsection{Undergraduate}
 
-% Database Management Systems \textbullet{}\\
-% Object Oriented Analysis and Design \textbullet{}\\
-% Artificial Intelligence and Expert Systems \textbullet{}\\
-% Scripting Languages and Web Tech \textbullet{}\\
-% Software Engineering \\
+
 
 \end{minipage} 
 \end{document}  \documentclass[]{article
