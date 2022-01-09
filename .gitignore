@@ -5,3 +5,4 @@ __pycache__
 *.fls
 *.fdb_latexmk
 *.out
+.DS_Store
