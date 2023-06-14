@@ -1,3 +1,5 @@
+## I haven't run updated CV yet!
+
 * Compiles only with **XeTeX**  so to compile run
 1. `export PATH="$PATH:/usr/local/texlive/2022/bin/universal-darwin"` 
 2. `xelatex CV.tex`
