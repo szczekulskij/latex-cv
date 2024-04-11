@@ -1,0 +1,275 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Jan Szczekulski} \\ \vspace{3pt}
+    \href{mailto:jszczekulski@ucsd.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{email}} ~ 
+    \href{https://jan-cs.com/}{\raisebox{-0.2\height}\faGithub\ \underline{website}} ~
+    \href{https://www.linkedin.com/in/jan-szczekulski-272ab615a}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin}}  ~
+    \href{https://github.com/szczekulskij}{\raisebox{-0.2\height}\faGithub\ \underline{github}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UC San Diego}{Sept. 2023 -- Present}
+      {Master of Science in Computer Science}{San Diego, USA}
+    \resumeSubheading
+      {University of Liverpool}{Sept. 2017 -- May 2020}
+      {BSc (honours) in Computer Science and Mathematics}{Liverpool, UK}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Amazon}{June 2024 -- Sept. 2023}
+      {Software Engineer}{Seattle, USA}
+
+    \resumeSubheading
+      {The Hut Group}{Dec. 2021 -- Aug. 2023}
+      {Software Engineer}{Manchester, UK}
+      \resumeItemListStart
+        \resumeItem{Improved and automated manual tools surrounding internal A/B testing platform such as duration estimation, results generation or metrics addition. Improved and set up acceptance and integration testing for multiple components}
+        \resumeItem{I led the experiment-able widgets project, which enabled the company to quickly and dynamically test changes to website's UI via A/B testing, leading to 60 new effortless experiments and estimated 3\% increase in YoY revenue}
+        \resumeItem{As a part of this project, I integrated an internal widget-serving backend together with a/b testing backend, as well as page-serving service}
+        \resumeItem{Set up various CI/CD pipelines utilising shell, github actions and Jenkins} 
+        \resumeItem{Dockerized and Kubernetized internal backends, frontends and data processing pipelines}
+        \resumeItem{Mentored and led development of multiple juniors - setting the learning paths, materials and presentation that explained team's software infrastructure}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {The Hut Group}{Sept. 2020 -- Dec. 2021}
+      {Graduate Data Scientist}{Manchester, UK}
+      \resumeItemListStart
+        \resumeItem{Helped develop a periodic company-wide ML algorithm and accuracy metrics for short-term demand forecasting}
+        \resumeItem{I conducted 7 A/B/n tests, and performed thorough data analyses which resulted in £1million rise in sales year-on-year. Two of the A/B tests included forecasting time-series data utilising ML}
+      \resumeItemListEnd
+
+
+      \resumeSubheading
+      {Lazarski University}{June 2021 -- Present}
+      {Research Collaborator}{Warsaw, Poland}
+      \resumeItemListStart
+        \resumeItem{Conducted a thorough data analysis of previous treatments to identify the most effective strategy for birthmark removal. Additionally, employed Convolutional Neural Networks (CNNs) alongside transfer learning techniques to forecast the outcomes of patient treatments using pre-operation photographs.}
+        \resumeItem{Utilizing CycleGAN in conjunction with Differential Augmentation, we developed a model capable of transforming images of patients' faces into healthy counterparts. This innovative approach allows patients to visualize potential outcomes of their facial appearance following treatment.}
+      \resumeItemListEnd
+
+
+      \resumeSubheading
+      {University of Liverpool}{June 2020 -- Aug 2020; Aug 2022 - Aug 2023}
+      {Undergraduate  Research Assistant}{Liverpool, UK}
+      \resumeItemListStart
+        \resumeItem{Focused on enhancing the geometric reconstruction of nanowires by utilizing Convolutional Neural Networks to predict reconstruction angles, aiming to improve accuracy.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {UCSD - Cognitive Robotics Laboratory}{September 2023 -- Present}
+      {Graduate Research Assistant}{San Diego, USA}
+      \resumeItemListStart
+        \resumeItem{I'm currently working on developing a new algorithm for a tabletop rearrangement task as a part of a bigger "home robot" project}
+      \resumeItemListEnd
+
+
+      
+
+% \newpage
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+%-----------PROJECTS-----------
+\section{Selected Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+          {\textbf{DDPG Improvement} $|$ \emph{PyTorch, Python}}{March 2020}
+          \resumeItemListStart
+            \resumeItem{I implemented Deep Deterministic Policy Gradient RL algorithm from scratch, and improved its' convergence rate and stability by applying OneCycle and SWA methods.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+
+          \resumeProjectHeading
+          {\textbf{Monet-me-this web app } $|$ \emph{React, SpringBoot, Python, PyTorch, Linux}}{November 2022}
+          \resumeItemListStart
+            \resumeItem{Implemented a cycleGAN AI model that turns a simple image into a painting that closely resembles the style of the master painters such as Monet or Van Gogh, and deployed it as a full-stack web application}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+      
+    \resumeSubHeadingListEnd
+% \vspace{-15pt}
+\vspace{5pt}
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL, Shell, Go, Java, JavaScript} \\
+     \textbf{Frameworks}{: PyTorch, Pandas, Numpy, Matplotlib, React, SpringBoot} \\
+     \textbf{Technologies/Tools}{: Git, GH actions, Docker, Jenkins, Kubernetes, Latex} \\
+    }}
+ \end{itemize}
+ % \vspace{5pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Publications}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Journal Articles \& Conference Proceedings}{}{}{}
+            \resumeItemListStart
+                \resumeItem{Anna Mataczynska, Michal Paprocki, \textbf{Jan Szczekulski} and Bartlomiej Kwiek. \textit{Laser Therapy of Cutis Marmorata Telangiectatica Congenita Vascular Malformation.} \textbf{Dermato}, volume 29 2023}
+                \vspace{3pt}
+                \resumeItem{\textbf{Jan Szczekulski}, Michal Paprocki, Ryan Butler, Anna Mataczynska and Bartlomiej Kwiek. \textit{Investigating the effectiveness of convolutional neural networks in predicting the efficacy rate of treating port-wine stain birthmark.} \textbf{Journal of Investigative Dermatology}, volume 143 2023}
+                \vspace{3pt}
+                \resumeItem{Michal Paprocki, Anna Mataczynska, \textbf{Jan Szczekulski} and Bartlomiej Kwiek. \textit{The effectiveness of cutis marmorata telangiectatica congenita laser therapy.} \textbf{Journal of Investigative Dermatology}, volume 143 2023}
+                \vspace{3pt}
+                \resumeItem{Michal Paprocki, Anna Mataczynska, \textbf{Jan Szczekulski}, and Bartlomiej Kwiek. \textit{Long term treatment of pws might require a new dual therapy consisting of induction and maintenance}. In 41st ASLMS Annual Conference on Energy Based Medicine\& Science, in San Diego California, USA.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{2}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item Robotics and Autonomous Systems
+                \item ML in Robotics
+                \item Introduction to AI
+                \item Advanced AI
+                \item Probabilistic Reasoning\&Learning
+                \item Computer Vision I
+                \item Advanced Computer Vision
+                \item Reccommendation Systems
+                \item Data Mining and Visualisation
+                \item Statistics, Linear Algebra \& Calculus courses
+                \item Unsupervised Learning
+                \item Search \& Optimization
+                \item Graduate Networks Systems
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+    
+\end{document}
